@@ -1,10 +1,5 @@
 <?php
-@include __DIR__ . '/partials/template/_header.php';
-@include __DIR__ . '/partials/home/server.php';
- ?>
-  <body>
-    <?php
-  @include __DIR__ . '/partials/template/_header.php';
+  @include __DIR__ . '/partials/template/header.php';
   @include __DIR__ . '/partials/home/server.php';
    ?>
     <body>
