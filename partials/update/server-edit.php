@@ -16,4 +16,8 @@ $stmt->execute();
 
 if($stmt && $stmt->affected_rows>0){
   header("Location:$basepath/show.php?id=$id");
+} elseif ($stmt && $stmt->affected_rows == 0) {
+  echo "Non hai modificato nessun dato";
+} else {
+  die('errore, hai inserito un dato non valido');
 }
